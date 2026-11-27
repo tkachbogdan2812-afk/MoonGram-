@@ -28,8 +28,8 @@ public class BuildVars {
     public static boolean NO_SCOPED_STORAGE = Build.VERSION.SDK_INT <= 29;
     public static String BUILD_VERSION_STRING = BuildConfig.BUILD_VERSION_STRING;
 
-    public static int APP_ID = 4;
-    public static String APP_HASH = "014b35b6184100b085b0d0572f9b5103";
+    public static int APP_ID = 34156041;
+    public static String APP_HASH = "2a503dd446a3262680d59216d4fd779f";
 
     // SafetyNet key for Google Identity SDK, set it to empty to disable
     public static String SAFETYNET_KEY = "";
@@ -49,8 +49,8 @@ public class BuildVars {
     public static boolean SUPPORTS_FPNV = false;
 
     static {
-        APP_ID = Extra.APP_ID;
-        APP_HASH = Extra.APP_HASH;
+        //APP_ID = Extra.APP_ID;
+      //  APP_HASH = Extra.APP_HASH;
         PLAYSTORE_APP_URL = "https://nekogram.app/download";
         if (ApplicationLoader.applicationContext != null) {
             SharedPreferences sharedPreferences = ApplicationLoader.applicationContext.getSharedPreferences("systemConfig", Context.MODE_PRIVATE);
